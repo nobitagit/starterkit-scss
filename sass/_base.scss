@@ -240,5 +240,13 @@ a, a:link, a:hover, a:visited, a:active{
     }
 }
 
+// Avoid flickering on given element. See: http://stackoverflow.com/questions/3461441/prevent-flicker-on-webkit-transition-of-webkit-transform
+.no-flick{
+    -webkit-backface-visibility: hidden;
+    -webkit-transform:translate3d(0,0,0);
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 1000;
+}
+
 
 
