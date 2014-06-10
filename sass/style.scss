@@ -1,0 +1,14 @@
+/* Welcome to Compass */
+
+@import "compass/css3";
+
+/* Normalize / reset */
+@import "_normalize.scss";
+// or:
+// @import "compass/reset", 
+
+/* Basic stylings & helpers */
+@import "_base.scss";
+
+/* import the grid system if needed */
+@import "_grid.scss";

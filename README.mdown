@@ -1,0 +1,2 @@
+# Start-SASS
+## A Compass based starter kit
