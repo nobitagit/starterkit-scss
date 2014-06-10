@@ -1,2 +1,2 @@
-# Start-SASS
+# Starterkit-SCSS
 ## A Compass based starter kit
