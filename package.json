@@ -1,0 +1,19 @@
+{
+  "name": "project-name",
+  "version": "0.0.1",
+  "description": "project description",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "none",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
