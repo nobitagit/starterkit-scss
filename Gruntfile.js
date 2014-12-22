@@ -38,11 +38,17 @@ module.exports = function(grunt) {
           {cwd: '<%= source %>/', expand: true, src: ['**/*'], dest: '<%= dist %>/'},        
         ]
       }
+    },
+
+    clean: {
+      build: ['<%= build %>/'],
+      dist: ['<%= dist %>/']
     }    
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');  
 
   grunt.registerTask('default', ['']);
 
