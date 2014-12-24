@@ -9,16 +9,6 @@ module.exports = function(grunt) {
     build: 'build', // this build folder is *IGNORED* by git
     dist: 'dist',   // this build folder is *TRACKED* by git
 
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    },
-
     copy: {
       build: {
         files: [
