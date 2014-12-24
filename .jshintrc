@@ -1,0 +1,48 @@
+{
+    // JSHint Default Configuration File (as on JSHint website)
+    // See http://jshint.com/docs/ for more details
+
+    "maxerr"        : 5,       // {int} Maximum error before stopping
+
+    // Enforcing
+    "camelcase"     : true,    // true: Identifiers must be in camelCase
+    "eqeqeq"        : true,     // true: Require triple equals (===) for comparison
+    "forin"         : true,     // true: Require filtering for..in loops with obj.hasOwnProperty()
+    "freeze"        : true,     // true: prohibits overwriting prototypes of native objects such as Array, Date etc.
+    "immed"         : true,    // true: Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
+    "indent"        : 2,        // {int} Number of spaces to use for indentation
+    "plusplus"      : false,    // true: Prohibit use of `++` & `--`
+    "quotmark"      : "single",    // Quotation mark consistency:
+                                //   false    : do nothing (default)
+                                //   true     : ensure whatever is used is consistent
+                                //   "single" : require single quotes
+                                //   "double" : require double quotes
+    "undef"         : true,     // true: Require all non-global variables to be declared (prevents global leaks)
+    "unused"        : true,     // true: Require all defined variables be used
+    "strict"        : true,     // true: Requires all functions run in ES5 Strict Mode
+    "maxparams"     : 4,    // {int} Max number of formal params allowed per function
+    "maxdepth"      : 4,    // {int} Max depth of nested blocks (within functions)
+    "maxstatements" : false,    // {int} Max number statements per function
+    "maxcomplexity" : false,    // {int} Max cyclomatic complexity per function
+    "maxlen"        : false,    // {int} Max number of characters per line
+
+    // Relaxing
+    "eqnull"        : false,     // true: Tolerate use of `== null`
+    "es5"           : false,     // true: Allow ES5 syntax (ex: getters and setters)
+    "esnext"        : false,     // true: Allow ES.next (ES6) syntax (ex: `const`)
+    "validthis"     : false,     // true: Tolerate using this in a non-constructor function
+
+    // Environments
+    "browser"       : true,     // Web Browser (window, document, etc)
+    "browserify"    : false,    // Browserify (node.js code in the browser)
+    "jasmine"       : true,    // Jasmine
+    "jquery"        : false,    // jQuery
+    "mocha"         : true,     // Mocha
+    "node"          : false,    // Node.js
+    "nonstandard"   : false,    // Widely adopted globals (escape, unescape, etc)
+
+    // Custom Globals
+    "globals"       : {
+        "module": true
+    }        // additional predefined global variables
+}
