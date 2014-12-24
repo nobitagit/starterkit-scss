@@ -20,8 +20,8 @@
     "undef"         : true,     // true: Require all non-global variables to be declared (prevents global leaks)
     "unused"        : true,     // true: Require all defined variables be used
     "strict"        : true,     // true: Requires all functions run in ES5 Strict Mode
-    "maxparams"     : 4,    // {int} Max number of formal params allowed per function
-    "maxdepth"      : 4,    // {int} Max depth of nested blocks (within functions)
+    "maxparams"     : 4,        // {int} Max number of formal params allowed per function
+    "maxdepth"      : 4,        // {int} Max depth of nested blocks (within functions)
     "maxstatements" : false,    // {int} Max number statements per function
     "maxcomplexity" : false,    // {int} Max cyclomatic complexity per function
     "maxlen"        : false,    // {int} Max number of characters per line
@@ -35,7 +35,7 @@
     // Environments
     "browser"       : true,     // Web Browser (window, document, etc)
     "browserify"    : false,    // Browserify (node.js code in the browser)
-    "jasmine"       : true,    // Jasmine
+    "jasmine"       : true,     // Jasmine
     "jquery"        : false,    // jQuery
     "mocha"         : true,     // Mocha
     "node"          : false,    // Node.js
@@ -43,6 +43,7 @@
 
     // Custom Globals
     "globals"       : {
-        "module": true
+        "module":  true,
+        "require": true
     }        // additional predefined global variables
 }
