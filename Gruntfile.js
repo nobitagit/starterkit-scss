@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  
+
   'use strict';
 
   grunt.initConfig({
@@ -9,6 +9,7 @@ module.exports = function(grunt) {
     source: 'source', 
     build: 'build', // this build folder is *IGNORED* by git
     dist: 'dist',   // this build folder is *TRACKED* by git
+    test: 'test',
 
     copy: {
       build: {
@@ -37,7 +38,7 @@ module.exports = function(grunt) {
         jshintrc: true,
         reporter: require('jshint-stylish')
       },
-      all: ['Gruntfile.js', 'source/*.js', '!source/lib/**/*', 'test/**/*.js']
+      all: ['Gruntfile.js', '<%= source %>/*.js', '!<%= source %>/lib/**/*', '<%= test %>/**/*.js']
     },
 
     clean: {
